@@ -17,7 +17,7 @@ const watchReactiveProp = (key, deep) => ({
 });
 
 const watchMoveableProps = () => PROPERTIES.reduce((acc, prop) => {
-  acc[prop] = watchReactiveProp(prop, true);
+  acc[prop] = watchReactiveProp(prop, false);
   return acc;
 }, {});
 
